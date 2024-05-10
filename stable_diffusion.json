@@ -112,8 +112,8 @@
         "available": false,
         "size_on_disk_bytes": 4265384157
     },
-    "AIPG RED": {
-        "name": "AIPG RED",
+    "AIPG_RED": {
+        "name": "AIPG_RED",
         "type": "ckpt",
         "description": "Merged SDXL Model that doesn't require a refiner.",
         "version": "1",
@@ -123,7 +123,7 @@
         "config": {
             "files": [
                 {
-                    "path": "AIPG RED.safetensors",
+                    "path": "AIPG_RED.safetensors",
                     "sha256sum": "ccbf7592011a0548717ba81f7d4c9e3ab71057196841e9e67ba42a9f0f921121"
                 },
                 {
@@ -132,7 +132,7 @@
             ],
             "download": [
                 {
-                    "file_name": "AIPG RED.safetensors",
+                    "file_name": "AIPG_RED.safetensors",
                     "file_path": "",
                     "file_url": "https://huggingface.co/ProfessorFT/AIPG_RED/resolve/main/AIPG%20RED.safetensors?download=true"
                 }
