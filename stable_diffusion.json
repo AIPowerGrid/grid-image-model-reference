@@ -124,7 +124,7 @@
             "files": [
                 {
                     "path": "AIPG_RED.safetensors",
-                    "sha256sum": "ccbf7592011a0548717ba81f7d4c9e3ab71057196841e9e67ba42a9f0f921121"
+                    "sha256sum": "CCBF7592011A0548717BA81F7D4C9E3AB71057196841E9E67BA42A9F0F921121"
                 },
                 {
                     "path": "v1-inference.yaml"
@@ -147,7 +147,7 @@
         "inpainting": false,
         "baseline": "stable_diffusion_xl",
         "homepage": "https://huggingface.co/ProfessorFT/AIPG_RED",
-        "size_on_disk_bytes": 6938046464
+        "size_on_disk_bytes": 6938042368
     },
     "wowXL420": {
         "name": "wowXL420",
