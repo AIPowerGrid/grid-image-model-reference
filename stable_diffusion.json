@@ -6438,6 +6438,9 @@
                 {
                     "path": "flux1KreaDev_fp8ClipWithVAE.safetensors",
                     "sha256sum": "AD6185A8E9D0364417D5EFAF01CB44CEC04939098FF6429CD816674682815909"
+                },
+                {
+                    "path": "flux1-krea-dev_fp8_scaled.safetensors"
                 }
             ],
             "download": [
@@ -6929,6 +6932,33 @@
                     "file_name": "chroma-unlocked-v27_float8_e4m3fn_scaled_stochastic.safetensors",
                     "file_path": "",
                     "file_url": "https://huggingface.co/Clybius/Chroma-fp8-scaled/resolve/main/chroma-unlocked-v27_float8_e4m3fn_scaled_stochastic.safetensors"
+                }
+            ]
+        },
+        "available": false
+    },
+    "Chroma": {
+        "name": "Chroma",
+        "baseline": "flux_1",
+        "type": "safetensors",
+        "inpainting": false,
+        "description": "Full precision Chroma model by Lodestone Rock, optimized for high-quality image generation with enhanced detail and artistic capabilities.",
+        "version": "v39",
+        "style": "generalist",
+        "homepage": "https://huggingface.co/Clybius/Chroma-fp8-scaled",
+        "nsfw": false,
+        "download_all": false,
+        "config": {
+            "files": [
+                {
+                    "path": "chroma-unlocked-v39.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "chroma-unlocked-v39.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Clybius/Chroma-fp8-scaled/resolve/main/chroma-unlocked-v39.safetensors"
                 }
             ]
         },
