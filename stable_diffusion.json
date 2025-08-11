@@ -6094,6 +6094,49 @@
         ],
         "size_on_disk_bytes": 6776583201
     },
+    "DreamShaper XL Turbo v2.1": {
+        "name": "DreamShaper XL Turbo v2.1",
+        "baseline": "stable_diffusion_xl",
+        "optimization": "lightning",
+        "type": "ckpt",
+        "inpainting": false,
+        "description": "DreamShaper XL Turbo v2.1 is a lightning-fast SDXL model optimized for speed while maintaining high quality output.",
+        "version": "2.1",
+        "style": "generalist",
+        "homepage": "https://civitai.com/models/112902",
+        "nsfw": true,
+        "download_all": false,
+        "requirements": {
+            "min_steps": 1,
+            "max_steps": 4,
+            "cfg_scale": 2,
+            "samplers": [
+                "k_dpmpp_sde"
+            ],
+            "schedulers": [
+                "karras"
+            ]
+        },
+        "files": [
+            {
+                "path": "DreamShaperXL_Turbo_v2_1.safetensors",
+                "sha256sum": "fdbe56354b8f876b736f24d3ad867ecd4140c019f57642ec8ddd878088d44f64"
+            }
+        ],
+        "download": [
+            {
+                "path": "DreamShaperXL_Turbo_v2_1.safetensors",
+                "file_name": "DreamShaperXL_Turbo_v2_1.safetensors",
+                "file_url": "https://huggingface.co/mirroring/horde_models/resolve/main/DreamShaperXL_Turbo_v2_1.safetensors?download=true"
+            }
+        ],
+        "features_not_supported": [
+            "hires_fix",
+            "inpainting",
+            "controlnet"
+        ],
+        "size_on_disk_bytes": 6776583201
+    },
     "Cheyenne": {
         "name": "Cheyenne",
         "baseline": "stable_diffusion_xl",
@@ -6917,6 +6960,33 @@
                     "file_name": "chroma-unlocked-v27_float8_e4m3fn_scaled_stochastic.safetensors",
                     "file_path": "",
                     "file_url": "https://huggingface.co/Clybius/Chroma-fp8-scaled/resolve/main/chroma-unlocked-v27_float8_e4m3fn_scaled_stochastic.safetensors"
+                }
+            ]
+        },
+        "available": false
+    },
+    "Chroma": {
+        "name": "Chroma",
+        "baseline": "flux_1",
+        "type": "safetensors",
+        "inpainting": false,
+        "description": "Full precision Chroma model by Lodestone Rock, optimized for high-quality image generation with enhanced detail and artistic capabilities.",
+        "version": "v39",
+        "style": "generalist",
+        "homepage": "https://huggingface.co/Clybius/Chroma-fp8-scaled",
+        "nsfw": false,
+        "download_all": false,
+        "config": {
+            "files": [
+                {
+                    "path": "chroma-unlocked-v39.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "chroma-unlocked-v39.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Clybius/Chroma-fp8-scaled/resolve/main/chroma-unlocked-v39.safetensors"
                 }
             ]
         },
