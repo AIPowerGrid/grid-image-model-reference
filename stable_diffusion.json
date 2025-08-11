@@ -6094,49 +6094,6 @@
         ],
         "size_on_disk_bytes": 6776583201
     },
-    "DreamShaper XL Turbo v2.1": {
-        "name": "DreamShaper XL Turbo v2.1",
-        "baseline": "stable_diffusion_xl",
-        "optimization": "lightning",
-        "type": "ckpt",
-        "inpainting": false,
-        "description": "DreamShaper XL Turbo v2.1 is a lightning-fast SDXL model optimized for speed while maintaining high quality output.",
-        "version": "2.1",
-        "style": "generalist",
-        "homepage": "https://civitai.com/models/112902",
-        "nsfw": true,
-        "download_all": false,
-        "requirements": {
-            "min_steps": 1,
-            "max_steps": 4,
-            "cfg_scale": 2,
-            "samplers": [
-                "k_dpmpp_sde"
-            ],
-            "schedulers": [
-                "karras"
-            ]
-        },
-        "files": [
-            {
-                "path": "DreamShaperXL_Turbo_v2_1.safetensors",
-                "sha256sum": "fdbe56354b8f876b736f24d3ad867ecd4140c019f57642ec8ddd878088d44f64"
-            }
-        ],
-        "download": [
-            {
-                "path": "DreamShaperXL_Turbo_v2_1.safetensors",
-                "file_name": "DreamShaperXL_Turbo_v2_1.safetensors",
-                "file_url": "https://huggingface.co/mirroring/horde_models/resolve/main/DreamShaperXL_Turbo_v2_1.safetensors?download=true"
-            }
-        ],
-        "features_not_supported": [
-            "hires_fix",
-            "inpainting",
-            "controlnet"
-        ],
-        "size_on_disk_bytes": 6776583201
-    },
     "Cheyenne": {
         "name": "Cheyenne",
         "baseline": "stable_diffusion_xl",
@@ -6427,10 +6384,10 @@
             "max_cfg_scale": 4,
             "clip_skip": 1,
             "samplers": [
-                "k_euler"
+            "k_euler"
             ],
             "schedulers": [
-                "karras"
+            "karras"
             ]
         },
         "config": {
@@ -6454,83 +6411,6 @@
             "controlnet"
         ],
         "size_on_disk_bytes": 17206700956
-    },
-    "Flux.1-Kontext-dev": {
-        "name": "Flux.1-Kontext-dev",
-        "baseline": "flux_1",
-        "type": "ckpt",
-        "inpainting": false,
-        "description": "FLUX.1-Kontext-dev is an image-to-image variant of the 12 billion parameter FLUX.1 model, developed by Black Forest Labs. It leverages the FluxKontextPipeline for context-aware image transformation and editing. Licensed under the Flux-1-Dev Non-Commercial License. For more information, see https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev.",
-        "version": "1.0",
-        "style": "generalist",
-        "homepage": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev",
-        "nsfw": false,
-        "download_all": true,
-        "requirements": {
-            "min_steps": 20,
-            "max_steps": 30,
-            "min_cfg_scale": 1,
-            "max_cfg_scale": 4,
-            "clip_skip": 1,
-            "samplers": [
-                "k_euler"
-            ],
-            "schedulers": [
-                "karras"
-            ]
-        },
-        "config": {
-            "files": [
-                {
-                    "path": "flux1-kontext-dev.safetensors",
-                    "sha256sum": "af58063aa431f4d2bbc11ae46f57451d4416a170"
-                },
-                {
-                    "path": "ae.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "vae/diffusion_pytorch_model.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "text_encoder/model.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "text_encoder_2/model-00001-of-00002.safetensors",
-                    "sha256sum": ""
-                },
-                {
-                    "path": "text_encoder_2/model-00002-of-00002.safetensors",
-                    "sha256sum": ""
-                }
-            ],
-            "download": [
-                {
-                    "file_name": "flux1-kontext-dev.safetensors",
-                    "file_path": "",
-                    "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors"
-                }
-            ]
-        },
-        "features_not_supported": [
-            "hires_fix",
-            "controlnet"
-        ],
-        "size_on_disk_bytes": 57894598692
     },
     "Pony Realism": {
         "name": "Pony Realism",
@@ -7006,33 +6886,6 @@
                     "file_name": "chroma-unlocked-v27_float8_e4m3fn_scaled_stochastic.safetensors",
                     "file_path": "",
                     "file_url": "https://huggingface.co/Clybius/Chroma-fp8-scaled/resolve/main/chroma-unlocked-v27_float8_e4m3fn_scaled_stochastic.safetensors"
-                }
-            ]
-        },
-        "available": false
-    },
-    "Chroma": {
-        "name": "Chroma",
-        "baseline": "flux_1",
-        "type": "safetensors",
-        "inpainting": false,
-        "description": "Full precision Chroma model by Lodestone Rock, optimized for high-quality image generation with enhanced detail and artistic capabilities.",
-        "version": "v39",
-        "style": "generalist",
-        "homepage": "https://huggingface.co/Clybius/Chroma-fp8-scaled",
-        "nsfw": false,
-        "download_all": false,
-        "config": {
-            "files": [
-                {
-                    "path": "chroma-unlocked-v39.safetensors"
-                }
-            ],
-            "download": [
-                {
-                    "file_name": "chroma-unlocked-v39.safetensors",
-                    "file_path": "",
-                    "file_url": "https://huggingface.co/Clybius/Chroma-fp8-scaled/resolve/main/chroma-unlocked-v39.safetensors"
                 }
             ]
         },
