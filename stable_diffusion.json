@@ -6427,10 +6427,10 @@
             "max_cfg_scale": 4,
             "clip_skip": 1,
             "samplers": [
-            "k_euler"
+                "k_euler"
             ],
             "schedulers": [
-            "karras"
+                "karras"
             ]
         },
         "config": {
