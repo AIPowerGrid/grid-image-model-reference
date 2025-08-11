@@ -6456,7 +6456,7 @@
         "size_on_disk_bytes": 17206700956
     },
     "Flux.1-Kontext-dev": {
-        "name": "Flux.1-Kontext",
+        "name": "Flux.1-Kontext-dev",
         "baseline": "flux_1",
         "type": "ckpt",
         "inpainting": false,
