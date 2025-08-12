@@ -49,39 +49,18 @@ Models are mapped to baseline types for consistent processing:
 The [ComfyUI Bridge](https://github.com/AIPowerGrid/comfy-bridge) uses this reference to:
 1. **Translate model names** from ComfyUI workflows to AI Power Grid compatible formats
 2. **Validate model availability** across the distributed network
-3. **Route requests** to appropriate compute nodes
-4. **Ensure consistency** between local and distributed processing
+3. **Ensure consistency** between local and distributed processing
 
 ## Adding Models
 
 When adding new models to the reference:
 
-1. **Include multiple name variations** that users might use in ComfyUI
-2. **Specify the correct baseline** for proper processing
-3. **Provide accurate metadata** (version, description, etc.)
-4. **Test with ComfyUI Bridge** to ensure compatibility
+To add new models, please submit a request including:
+1.  **Multiple name variations** used in ComfyUI.
+2.  The **correct baseline** for processing.
+3.  **Accurate metadata** (version, description, etc.).
+4.  Confirmation of **ComfyUI Bridge compatibility**.
 
-## Model Categories
-
-### Core Models
-- **SDXL Models** - High-quality, large-scale generation
-- **SD1.5 Models** - Fast, efficient generation
-- **Flux Models** - Ultra-fast generation with quality
-- **Cascade Models** - Advanced multi-stage generation
-
-### Specialized Models
-- **Realistic Models** - Photorealistic generation
-- **Artistic Models** - Creative and stylized generation
-- **Anime Models** - Anime and manga style generation
-
-## Contributing
-
-This reference is maintained by the AI Power Grid community. When contributing:
-
-1. **Test with ComfyUI** to ensure model names work correctly
-2. **Verify baseline mapping** is appropriate
-3. **Include multiple name variations** for better compatibility
-4. **Update documentation** for any new model types
 
 ## Related Projects
 
