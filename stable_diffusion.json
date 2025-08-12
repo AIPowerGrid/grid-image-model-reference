@@ -639,7 +639,7 @@
         "name": "FLUX.1-dev-Kontext-fp8-scaled",
         "baseline": "flux_1",
         "type": "ckpt",
-        "inpainting": false,
+        "inpainting": true,
         "description": "FLUX.1-dev Kontext FP8 scaled is the optimized fp8 scaled version of the img2img model for FLUX.1-dev that enables precise image editing and transformation.",
         "version": "1.0",
         "download_all": true,
