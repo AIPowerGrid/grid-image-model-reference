@@ -728,5 +728,82 @@
             "controlnet"
         ],
         "size_on_disk_bytes": 17206700956
+    },
+    "Chroma": {
+        "name": "Chroma",
+        "baseline": "flux_1",
+        "type": "ckpt",
+        "inpainting": false,
+        "description": "Chroma is a high-quality image generation model optimized for creating vibrant, detailed images with excellent color reproduction and artistic quality.",
+        "version": "3.9",
+        "style": "generalist",
+        "homepage": "https://huggingface.co/lodestones/Chroma",
+        "nsfw": false,
+        "download_all": false,
+        "requirements": {
+            "min_steps": 28,
+            "max_steps": 32,
+            "min_cfg_scale": 3.5,
+            "max_cfg_scale": 5,
+            "clip_skip": 1,
+            "samplers": [
+                "euler",
+                "m_euler",
+                "euler_m"
+            ],
+            "schedulers": [
+                "simple"
+            ]
+        },
+        "config": {
+            "files": [
+                {
+                    "path": "chroma-unlocked-v30.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v31.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v32.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v33.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v34.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v35.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v36.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v37.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v38.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v39.safetensors"
+                },
+                {
+                    "path": "chroma-unlocked-v40.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "chroma-unlocked-v39.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/lodestones/Chroma/resolve/main/chroma-unlocked-v39.safetensors?download=true"
+                }
+            ]
+        },
+        "features_not_supported": [
+            "hires_fix",
+            "inpainting",
+            "controlnet"
+        ],
+        "size_on_disk_bytes": 17206700956
     }
 }
