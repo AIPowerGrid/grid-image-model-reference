@@ -635,36 +635,6 @@
             "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors"
         }
     },
-    "FLUX.1-Kontext": {
-        "name": "FLUX.1-Kontext",
-        "baseline": "flux_1",
-        "type": "ckpt",
-        "inpainting": false,
-        "description": "FLUX.1 Kontext is an img2img model for FLUX.1 that enables precise image editing and transformation while maintaining context and composition.",
-        "version": "1.0",
-        "download_all": true,
-        "config": {
-            "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-kontext.safetensors",
-            "file_path": "flux1-kontext.safetensors",
-            "file_name": "flux1-kontext.safetensors",
-            "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-kontext.safetensors"
-        }
-    },
-    "FLUX.1-Kontext-fp8": {
-        "name": "FLUX.1-Kontext-fp8",
-        "baseline": "flux_1",
-        "type": "ckpt",
-        "inpainting": false,
-        "description": "FLUX.1 Kontext FP8 is the optimized fp8 version of the img2img model for FLUX.1 that enables precise image editing and transformation while maintaining context and composition.",
-        "version": "1.0",
-        "download_all": true,
-        "config": {
-            "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-kontext-fp8.safetensors",
-            "file_path": "flux1-kontext-fp8.safetensors",
-            "file_name": "flux1-kontext-fp8.safetensors",
-            "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-kontext-fp8.safetensors"
-        }
-    },
     "FLUX.1-dev-Kontext-fp8-scaled": {
         "name": "FLUX.1-dev-Kontext-fp8-scaled",
         "baseline": "flux_1",
@@ -673,7 +643,24 @@
         "description": "FLUX.1-dev Kontext FP8 scaled is the optimized fp8 scaled version of the img2img model for FLUX.1-dev that enables precise image editing and transformation.",
         "version": "1.0",
         "download_all": true,
+        "requirements": {
+            "min_steps": 20,
+            "max_steps": 30,
+            "min_cfg_scale": 1,
+            "max_cfg_scale": 2.5,
+            "samplers": [
+                "euler"
+            ],
+            "schedulers": [
+                "simple"
+            ]
+        },
         "config": {
+            "files": [
+                {
+                    "path": "flux1-dev-kontext_fp8_scaled.safetensors"
+                }
+            ],
             "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-dev-kontext_fp8_scaled.safetensors",
             "file_path": "flux1-dev-kontext_fp8_scaled.safetensors",
             "file_name": "flux1-dev-kontext_fp8_scaled.safetensors",
