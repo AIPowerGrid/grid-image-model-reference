@@ -772,9 +772,7 @@
             "max_cfg_scale": 5,
             "clip_skip": 1,
             "samplers": [
-                "euler",
-                "m_euler",
-                "euler_m"
+                "k_euler"
             ],
             "schedulers": [
                 "simple"
