@@ -612,6 +612,7 @@
         "inpainting": false,
         "description": "FLUX.1-dev is a development version of the FLUX model for high-quality image generation.",
         "version": "1.0",
+        "style": "generalist",
         "download_all": true,
         "config": {
             "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors",
@@ -627,6 +628,7 @@
         "inpainting": false,
         "description": "FLUX.1-schnell is the fast version of the FLUX model for quick image generation.",
         "version": "1.0",
+        "style": "generalist",
         "download_all": true,
         "config": {
             "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors",
