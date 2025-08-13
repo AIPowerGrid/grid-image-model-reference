@@ -649,7 +649,7 @@
             "min_cfg_scale": 1,
             "max_cfg_scale": 2.5,
             "samplers": [
-                "euler"
+                "k_euler"
             ],
             "schedulers": [
                 "simple"
