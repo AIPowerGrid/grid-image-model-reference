@@ -802,5 +802,110 @@
             "controlnet"
         ],
         "size_on_disk_bytes": 17206700956
+    },
+    "Wan2.2-T2V-A14B": {
+        "name": "Wan2.2-T2V-A14B",
+        "baseline": "wan_2_2",
+        "type": "ckpt",
+        "inpainting": false,
+        "description": "Wan 2.2 Text-to-Video (A14B) by Wan-AI. A 14B-parameter text-to-video diffusion system that uses separate high-noise and low-noise transformer backbones plus a Wan 2.1 VAE and a UMT5-XXL text encoder. Apache-2.0 licensed. See repository for usage and details: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
+        "version": "2.2-A14B",
+        "style": "video",
+        "homepage": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
+        "nsfw": false,
+        "download_all": true,
+
+        "requirements": {
+            "min_steps": 20,
+            "max_steps": 40,
+            "min_cfg_scale": 1,
+            "max_cfg_scale": 6,
+            "clip_skip": 1,
+            "samplers": ["k_euler"],
+            "schedulers": ["karras"]
+        },
+
+        "config": {
+            "files": [
+            { "path": "configuration.json", "sha256sum": "" },
+
+            { "path": "Wan2.1_VAE.pth", "sha256sum": "" },
+
+            { "path": "models_t5_umt5-xxl-enc-bf16.pth", "sha256sum": "" },
+
+            { "path": "high_noise_model/config.json", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors", "sha256sum": "" },
+            { "path": "high_noise_model/diffusion_pytorch_model.safetensors.index.json", "sha256sum": "" },
+
+            { "path": "low_noise_model/config.json", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors", "sha256sum": "" },
+            { "path": "low_noise_model/diffusion_pytorch_model.safetensors.index.json", "sha256sum": "" },
+
+            { "path": "google/umt5-xxl/special_tokens_map.json", "sha256sum": "" },
+            { "path": "google/umt5-xxl/spiece.model", "sha256sum": "" },
+            { "path": "google/umt5-xxl/tokenizer.json", "sha256sum": "" },
+            { "path": "google/umt5-xxl/tokenizer_config.json", "sha256sum": "" }
+            ],
+
+            "download": [
+            {
+                "file_name": "configuration.json",
+                "file_path": "",
+                "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/configuration.json"
+            },
+            {
+                "file_name": "Wan2.1_VAE.pth",
+                "file_path": "",
+                "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/Wan2.1_VAE.pth"
+            },
+            {
+                "file_name": "models_t5_umt5-xxl-enc-bf16.pth",
+                "file_path": "",
+                "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/models_t5_umt5-xxl-enc-bf16.pth"
+            },
+
+            { "file_name": "high_noise_model/config.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/config.json" },
+            { "file_name": "high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors" },
+            { "file_name": "high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors" },
+            { "file_name": "high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors" },
+            { "file_name": "high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors" },
+            { "file_name": "high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors" },
+            { "file_name": "high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors" },
+
+            { "file_name": "high_noise_model/diffusion_pytorch_model.safetensors.index.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/high_noise_model/diffusion_pytorch_model.safetensors.index.json" },
+
+            { "file_name": "low_noise_model/config.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/config.json" },
+            { "file_name": "low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model-00001-of-00006.safetensors" },
+            { "file_name": "low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model-00002-of-00006.safetensors" },
+            { "file_name": "low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model-00003-of-00006.safetensors" },
+            { "file_name": "low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model-00004-of-00006.safetensors" },
+            { "file_name": "low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model-00005-of-00006.safetensors" },
+            { "file_name": "low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model-00006-of-00006.safetensors" },
+
+            { "file_name": "low_noise_model/diffusion_pytorch_model.safetensors.index.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/low_noise_model/diffusion_pytorch_model.safetensors.index.json" },
+
+            { "file_name": "google/umt5-xxl/special_tokens_map.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/google/umt5-xxl/special_tokens_map.json" },
+            { "file_name": "google/umt5-xxl/spiece.model", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/google/umt5-xxl/spiece.model" },
+            { "file_name": "google/umt5-xxl/tokenizer.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/google/umt5-xxl/tokenizer.json" },
+            { "file_name": "google/umt5-xxl/tokenizer_config.json", "file_path": "", "file_url": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B/resolve/main/google/umt5-xxl/tokenizer_config.json" }
+            ]
+        },
+
+        "features_not_supported": [
+            "hires_fix",
+            "inpainting",
+            "controlnet"
+        ],
+        "size_on_disk_bytes": 240513070041
     }
 }
