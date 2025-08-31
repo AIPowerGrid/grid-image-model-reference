@@ -820,7 +820,7 @@
             "min_cfg_scale": 1,
             "max_cfg_scale": 1,
             "clip_skip": 1,
-            "samplers": ["euler"],
+            "samplers": ["k_euler"],
             "schedulers": ["simple"]
         },
         "config": {
