@@ -803,8 +803,8 @@
         ],
         "size_on_disk_bytes": 17206700956
     },
-    "Wan2.2-T2V-A14B": {
-        "name": "Wan2.2-T2V-A14B",
+    "wan2.2-t2v-a14b": {
+        "name": "wan2.2-t2v-a14b",
         "baseline": "wan_2_2",
         "type": "ckpt",
         "inpainting": false,
