@@ -851,5 +851,104 @@
             "controlnet"
         ],
         "size_on_disk_bytes": 240513070041
+    },
+    "wan2.2_ti2v_5B": {
+        "name": "wan2.2_ti2v_5B",
+        "baseline": "wan_2_2",
+        "type": "ckpt",
+        "inpainting": true,
+        "description": "Wan 2.2 Text/Image-to-Video (5B) by Wan-AI. A 5B-parameter text-to-video and image-to-video diffusion model using a single transformer backbone plus a Wan 2.2 VAE and UMT5-XXL text encoder. Supports both text-to-video and image-to-video generation. Economy option for hardware like RTX 5070Ti or better. Apache-2.0 licensed. See repository for usage: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B",
+        "version": "2.2-5B",
+        "style": "video",
+        "homepage": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B",
+        "nsfw": false,
+        "download_all": true,
+        "requirements": {
+            "min_steps": 20,
+            "max_steps": 20,
+            "min_cfg_scale": 5,
+            "max_cfg_scale": 5,
+            "clip_skip": 1,
+            "samplers": ["uni_pc"],
+            "schedulers": ["simple"]
+        },
+        "config": {
+            "files": [
+                {
+                    "path": "wan2.2_ti2v_5B_fp16.safetensors"
+                },
+                {
+                    "path": "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+                },
+                {
+                    "path": "wan2.2_vae.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "wan2.2_ti2v_5B_fp16.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors"
+                },
+                {
+                    "file_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_vae.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors"
+                }
+            ]
+        },
+        "features_not_supported": [
+            "hires_fix",
+            "controlnet"
+        ],
+        "size_on_disk_bytes": 15000000000
+    },
+    "wan2.2-t2v-a14b-hq": {
+        "name": "wan2.2-t2v-a14b-hq",
+        "baseline": "wan_2_2",
+        "type": "ckpt",
+        "inpainting": false,
+        "description": "Wan 2.2 Text-to-Video (A14B High Quality) by Wan-AI. A 14B-parameter premium text-to-video diffusion system without lighting LoRAs for maximum quality. Uses separate high-noise and low-noise transformer backbones plus a Wan 2.1 VAE and a UMT5-XXL text encoder. Requires high-end hardware like Nvidia Blackwell 6000 Pro or better. Apache-2.0 licensed. See repository for usage and details: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
+        "version": "2.2-A14B-HQ",
+        "style": "video",
+        "homepage": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
+        "nsfw": false,
+        "download_all": true,
+        "requirements": {
+            "min_steps": 20,
+            "max_steps": 20,
+            "min_cfg_scale": 1,
+            "max_cfg_scale": 1,
+            "clip_skip": 1,
+            "samplers": ["k_euler"],
+            "schedulers": ["simple"]
+        },
+        "config": {
+            "files": [
+                {
+                    "path": "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+                },
+                {
+                    "path": "wan_2.1_vae.safetensors"
+                },
+                {
+                    "path": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors" 
+                },
+                {
+                    "path": "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors"
+                }
+            ]
+        },
+        "features_not_supported": [
+            "hires_fix",
+            "inpainting",
+            "controlnet"
+        ],
+        "size_on_disk_bytes": 30000000000
     }
 }
