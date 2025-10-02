@@ -829,7 +829,7 @@
                     "path": "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
                 },
                 {
-                    "path": "wan_2.1_vae.safetensors"
+                    "path": "wan2.2_vae.safetensors"
                 },
                 {
                     "path": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors" 
@@ -934,7 +934,7 @@
                     "path": "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
                 },
                 {
-                    "path": "wan_2.1_vae.safetensors"
+                    "path": "wan2.2_vae.safetensors"
                 },
                 {
                     "path": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors" 
