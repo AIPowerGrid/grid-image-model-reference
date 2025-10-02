@@ -812,7 +812,7 @@
         "version": "2.2-A14B",
         "style": "video",
         "homepage": "https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B",
-        "nsfw": false,
+        "nsfw": true,
         "download_all": true,
         "requirements": {
             "min_steps": 4,
