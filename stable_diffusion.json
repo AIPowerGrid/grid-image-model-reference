@@ -324,7 +324,7 @@
                 {
                     "file_name": "icbinp.safetensors",
                     "file_path": "",
-                    "file_url": "https://huggingface.co/mirroring/horde_models/resolve/main/icbinpICantBelieveIts_newYear.safetensors?download=true"
+                    "file_url": "https://huggingface.co/mirroring/horde_models/resolve/main/icbinp.safetensors?download=true"
                 }
             ]
         },
@@ -389,7 +389,7 @@
                 {
                     "file_name": "icbinp_xl.safetensors",
                     "file_path": "",
-                    "file_url": "https://huggingface.co/mirroring/horde_models/resolve/main/ICBINP_XL_v6.safetensors"
+                    "file_url": "https://huggingface.co/mirroring/horde_models/resolve/main/icbinp_xl.safetensors?download=true"
                 }
             ]
         },
@@ -610,7 +610,7 @@
     "baseline": "flux_1",
     "type": "ckpt",
     "inpainting": false,
-    "description": "FLUX.1-dev is a development version of the FLUX model for high-quality image generation.",
+    "description": "FLUX.1-dev is a development version of the FLUX model for high-quality image generation. NOTE: This model requires HuggingFace authentication. Set HUGGING_FACE_API_KEY environment variable.",
     "version": "1.0",
     "style": "generalist",
     "download_all": true,
@@ -620,10 +620,13 @@
           "path": "flux1-dev.safetensors"
         }
       ],
-      "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors",
-      "file_path": "flux1-dev.safetensors",
-      "file_name": "flux1-dev.safetensors",
-      "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+      "download": [
+        {
+          "file_name": "flux1-dev.safetensors",
+          "file_path": "",
+          "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+        }
+      ]
     }
   },
     "FLUX.1-schnell": {
@@ -631,15 +634,23 @@
         "baseline": "flux_1",
         "type": "ckpt",
         "inpainting": false,
-        "description": "FLUX.1-schnell is the fast version of the FLUX model for quick image generation.",
+        "description": "FLUX.1-schnell is the fast version of the FLUX model for quick image generation. NOTE: This model requires HuggingFace authentication. Set HUGGING_FACE_API_KEY environment variable.",
         "version": "1.0",
         "style": "generalist",
         "download_all": true,
         "config": {
-            "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors",
-            "file_path": "flux1-schnell.safetensors",
-            "file_name": "flux1-schnell.safetensors",
-            "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors"
+            "files": [
+                {
+                    "path": "flux1-schnell.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "flux1-schnell.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors"
+                }
+            ]
         }
     },
     "FLUX.1-dev-Kontext-fp8-scaled": {
@@ -647,10 +658,10 @@
         "baseline": "flux_1",
         "type": "ckpt",
         "inpainting": true,
-        "description": "FLUX.1-dev Kontext FP8 scaled is the optimized fp8 scaled version of the img2img model for FLUX.1-dev that enables precise image editing and transformation.",
+        "description": "FLUX.1-dev Kontext FP8 scaled is the optimized fp8 scaled version of the img2img model for FLUX.1-dev that enables precise image editing and transformation. NOTE: This model requires HuggingFace authentication. Set HUGGING_FACE_API_KEY environment variable.",
         "version": "1.0",
         "style": "generalist",
-        "homepage": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext",
+        "homepage": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev",
         "nsfw": false,
         "download_all": true,
         "requirements": {
@@ -669,13 +680,16 @@
         "config": {
             "files": [
                 {
-                    "path": "flux1-dev-kontext_fp8_scaled.safetensors"
+                    "path": "flux1-kontext-dev.safetensors"
                 }
             ],
-            "download_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-dev-kontext_fp8_scaled.safetensors",
-            "file_path": "flux1-dev-kontext_fp8_scaled.safetensors",
-            "file_name": "flux1-dev-kontext_fp8_scaled.safetensors",
-            "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext/resolve/main/flux1-dev-kontext_fp8_scaled.safetensors"
+            "download": [
+                {
+                    "file_name": "flux1-kontext-dev.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors?download=true"
+                }
+            ]
         },
         "features_not_supported": [
             "hires_fix",
@@ -829,7 +843,7 @@
                     "path": "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
                 },
                 {
-                    "path": "wan2.2_vae.safetensors"
+                    "path": "wan_2.1_vae.safetensors"
                 },
                 {
                     "path": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors" 
@@ -842,6 +856,38 @@
                 },
                 {
                     "path": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+                },
+                {
+                    "file_name": "wan_2.1_vae.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors"
                 }
             ]
         },
@@ -934,13 +980,35 @@
                     "path": "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
                 },
                 {
-                    "path": "wan2.2_vae.safetensors"
+                    "path": "wan_2.1_vae.safetensors"
                 },
                 {
                     "path": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors" 
                 },
                 {
                     "path": "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+                },
+                {
+                    "file_name": "wan_2.1_vae.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors"
+                },
+                {
+                    "file_name": "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors"
                 }
             ]
         },
@@ -950,5 +1018,46 @@
             "controlnet"
         ],
         "size_on_disk_bytes": 30000000000
+    },
+    "ltxv": {
+        "name": "ltxv",
+        "baseline": "ltx_video",
+        "type": "ckpt",
+        "inpainting": false,
+        "description": "LTX-Video is the first DiT-based video generation model capable of generating high-quality videos in real-time. It produces 30 FPS videos at a 1216×704 resolution faster than they can be watched. Trained on a large-scale dataset of diverse videos, the model generates high-resolution videos with realistic and varied content. This entry uses the ltxv-13b-0.9.8-dev model for highest quality output. NOTE: This model requires HuggingFace authentication. Set HUGGING_FACE_API_KEY environment variable.",
+        "version": "0.9.8-dev",
+        "style": "video",
+        "homepage": "https://huggingface.co/Lightricks/LTX-Video",
+        "nsfw": false,
+        "download_all": true,
+        "requirements": {
+            "min_steps": 20,
+            "max_steps": 30,
+            "min_cfg_scale": 1,
+            "max_cfg_scale": 2.5,
+            "clip_skip": 1,
+            "samplers": ["k_euler"],
+            "schedulers": ["simple"]
+        },
+        "config": {
+            "files": [
+                {
+                    "path": "ltxv-13b-0.9.8-dev.safetensors"
+                }
+            ],
+            "download": [
+                {
+                    "file_name": "ltxv-13b-0.9.8-dev.safetensors",
+                    "file_path": "",
+                    "file_url": "https://huggingface.co/Lightricks/LTX-Video/resolve/main/ltxv-13b-0.9.8-dev.safetensors?download=true"
+                }
+            ]
+        },
+        "features_not_supported": [
+            "hires_fix",
+            "inpainting",
+            "controlnet"
+        ],
+        "size_on_disk_bytes": 50000000000
     }
 }
