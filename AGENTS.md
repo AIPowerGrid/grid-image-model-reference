@@ -39,7 +39,7 @@ concrete detail in children. Delete stale notes instead of explaining history.
 A DATA repo: curated JSON definitions of the image models, ControlNets, LoRAs, embeddings,
 and dependencies the grid knows about. It is the translation layer between **ComfyUI**
 naming and **AI Power Grid** model names, consumed by
-[comfy-bridge](https://github.com/AIPowerGrid/comfy-bridge) to resolve, validate, and
+[grid-comfy-bridge](https://github.com/AIPowerGrid/grid-comfy-bridge) to resolve, validate, and
 download models. There is almost no runtime code here — the deliverables are the JSON files.
 
 ## Ownership
@@ -72,7 +72,7 @@ download models. There is almost no runtime code here — the deliverables are t
 - **Inherit org engineering standards:** /Users/j/fix-axios-vuln/aipg-documentation/engineering-standards/
   (core + git + the matching language file).
 - **JSON is the product.** Edits are data edits. Keep keys = grid model names; preserve the
-  existing record shape so comfy-bridge's resolver does not break.
+  existing record shape so grid-comfy-bridge's resolver does not break.
 - **`stable_diffusion.json` must validate** against `stable_diffusion.schema.json` and the
   `horde_model_reference` legacy validator — no extra fields (CI runs with `fail_on_extra`).
 - **Checksums are load-bearing.** When adding/updating a checkpoint, set the real
