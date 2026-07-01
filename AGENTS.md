@@ -34,13 +34,20 @@ concrete detail in children. Delete stale notes instead of explaining history.
 
 # grid-image-model-reference — image model definitions for the grid
 
+## Status
+
+**FORK of Haidra's `AI-Horde-image-model-reference`.** The checkpoint set here is horde-era
+reference data — it is NOT the live grid model set. The current LIVE media models are Krea 2
+Turbo / z-image-turbo / FLUX.2 Klein 4B FP8 (image) and LTX-2.3 (video); treat the JSON here as
+the naming/resolution reference layer, not an assertion of what workers serve today.
+
 ## Purpose
 
 A DATA repo: curated JSON definitions of the image models, ControlNets, LoRAs, embeddings,
 and dependencies the grid knows about. It is the translation layer between **ComfyUI**
-naming and **AI Power Grid** model names, consumed by
-[grid-comfy-bridge](https://github.com/AIPowerGrid/grid-comfy-bridge) to resolve, validate, and
-download models. There is almost no runtime code here — the deliverables are the JSON files.
+naming and **AI Power Grid** model names, consumed by the media worker
+(`../grid-media-worker`) to resolve, validate, and download models. There is almost no runtime
+code here — the deliverables are the JSON files.
 
 ## Ownership
 
@@ -69,10 +76,10 @@ download models. There is almost no runtime code here — the deliverables are t
 
 ## Local Contracts
 
-- **Inherit org engineering standards:** /Users/j/fix-axios-vuln/aipg-documentation/engineering-standards/
+- **Inherit org engineering standards:** ../aipg-documentation/engineering-standards/
   (core + git + the matching language file).
 - **JSON is the product.** Edits are data edits. Keep keys = grid model names; preserve the
-  existing record shape so grid-comfy-bridge's resolver does not break.
+  existing record shape so the media worker's resolver does not break.
 - **`stable_diffusion.json` must validate** against `stable_diffusion.schema.json` and the
   `horde_model_reference` legacy validator — no extra fields (CI runs with `fail_on_extra`).
 - **Checksums are load-bearing.** When adding/updating a checkpoint, set the real
