@@ -1,6 +1,7 @@
 # AI Power Grid Image Model Reference
 
-Model reference for [AI Power Grid](https://github.com/AIPowerGrid) and [ComfyUI Bridge](https://github.com/AIPowerGrid/comfy-bridge).
+Model reference for [AI Power Grid](https://github.com/AIPowerGrid) and the
+[Grid media worker](https://github.com/AIPowerGrid/grid-media-worker).
 
 This repository contains a curated collection of model definitions that bridge ComfyUI with AI Power Grid's distributed computing network. Unlike traditional model references, this system supports multiple model names per reference to accommodate the various naming conventions used in ComfyUI workflows.
 
@@ -9,7 +10,7 @@ This repository contains a curated collection of model definitions that bridge C
 The AI Power Grid Image Model Reference serves as a translation layer between:
 - **ComfyUI** - Local AI image generation workflows
 - **AI Power Grid** - Distributed computing network for AI tasks
-- **ComfyUI Bridge** - Connector that enables seamless integration
+- **Grid media worker** - ComfyUI connector for the Grid
 
 ## Key Features
 
@@ -44,9 +45,9 @@ Models are mapped to baseline types for consistent processing:
 }
 ```
 
-## Integration with ComfyUI Bridge
+## Integration with the Grid Media Worker
 
-The [ComfyUI Bridge](https://github.com/AIPowerGrid/comfy-bridge) uses this reference to:
+The [Grid media worker](https://github.com/AIPowerGrid/grid-media-worker) uses this reference to:
 1. **Translate model names** from ComfyUI workflows to AI Power Grid compatible formats
 2. **Validate model availability** across the distributed network
 3. **Ensure consistency** between local and distributed processing
@@ -59,11 +60,10 @@ To add new models, please submit a request including:
 1.  **Multiple name variations** used in ComfyUI.
 2.  The **correct baseline** for processing.
 3.  **Accurate metadata** (version, description, etc.).
-4.  Confirmation of **ComfyUI Bridge compatibility**.
+4.  Confirmation of **Grid media worker compatibility**.
 
 
 ## Related Projects
 
 - [AI Power Grid](https://github.com/AIPowerGrid) - Distributed AI computing network
-- [ComfyUI Bridge](https://github.com/AIPowerGrid/comfy-bridge) - ComfyUI integration
-- [Grid Styles](https://github.com/AIPowerGrid/grid-styles) - Style definitions for AI Power Grid
+- [Grid media worker](https://github.com/AIPowerGrid/grid-media-worker) - ComfyUI integration

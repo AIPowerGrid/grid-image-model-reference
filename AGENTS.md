@@ -106,4 +106,7 @@ code here — the deliverables are the JSON files.
 
 ## Child DOX Index
 
+- [scripts/AGENTS.md](scripts/AGENTS.md) — catalog validation and maintenance
+  utilities.
+
 - (none) — single-file DOX; `scripts/` and the JSON files are documented above.
