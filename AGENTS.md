@@ -51,7 +51,7 @@ code here — the deliverables are the JSON files.
 
 ## Ownership
 
-- **`stable_diffusion.json`** — primary checkpoint reference (~26 entries). Each key is a
+- **`stable_diffusion.json`** — primary checkpoint reference (~25 entries). Each key is a
   grid model name; value carries `baseline`, `type`, `config.files[]` (path + sha256/md5),
   and `config.download[]` (file_name/file_path/file_url). This is the canonical file the
   validation CI and `scripts/` operate on.
@@ -87,6 +87,9 @@ code here — the deliverables are the JSON files.
 - **Multiple ComfyUI names per model** is intentional (aliases/file names/community names) —
   do not collapse them.
 - Do not edit `stable_diffusion_old.json` for live changes; it is archival.
+- Retired network identities belong only in `stable_diffusion_old.json`; remove
+  them from the primary reference so environment-derived workers cannot
+  advertise them.
 
 ## Work Guidance
 
