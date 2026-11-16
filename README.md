@@ -67,3 +67,10 @@ To add new models, please submit a request including:
 
 - [AI Power Grid](https://github.com/AIPowerGrid) - Distributed AI computing network
 - [Grid media worker](https://github.com/AIPowerGrid/grid-media-worker) - ComfyUI integration
+
+## Origin and licence
+
+This repository is a modified fork of
+[AI-Horde-image-model-reference](https://github.com/Haidra-Org/AI-Horde-image-model-reference)
+by the Haidra contributors, used and redistributed under the GNU Affero General
+Public License v3. The `LICENSE` file is unchanged from upstream.
